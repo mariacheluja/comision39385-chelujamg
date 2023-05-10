@@ -10,17 +10,24 @@
 .inicio{
     display: flex;
     background-color: rgba(246, 198, 234, 1);
-    font-size: 35px;
+    font-size: 50px;
     text-align: center;
     padding: 30px 0px 20px 150px;
-    gap: 200px;
-    width: 200vh;
-    
-
+    gap: 1000px;
+    width: 180vh;
+}
+.pepito{
+    display: flex;
+    background-color: rgba(246, 198, 234, 1);
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 0px 20px 150px;
+    gap: 500px;
+    width: 180vh;
 }
 .imagen{
     display:grid;
-    width: 200vh;
+    width: 10vh;
     height: 50vh;
     background-color:rgba(0, 255, 255, 0.068);
     grid-template-columns: 400px 500px 100px;
@@ -34,10 +41,10 @@
 
 .img{
     grid-area: img;
-    width: 100vh;
+    width: 120vh;
     height: 50vh;
     grid-area: img;
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3; 
@@ -48,31 +55,34 @@
     padding: 10px 10px 10px 10px;
     background-color: rgba(137, 43, 226, 0.089);
 }
+
 .tipo{
     grid-area: tipo;
-    width: 50vh;
+    width: 60vh;
     height: 50vh;
     background-color: rgba(165, 87, 42, 0.068);
 }
 .main{
-    width: 100vh;
+    width: 120vh;
     height: 100%;
     text-decoration: none;
 }
 .navbar{
     display:flex;
     background-color:rgb(241, 245, 18);
-    width: 200vh;
+    width: 180vh;
     height: 5vh;
-    padding-left: 350px;
-    justify-content: space-between;
+    gap: 30px;
+    padding-left: 700px;
+    /* justify-content: space-between; */
     list-style: none;
     text-decoration: none;
     line-height: 100%;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     flex-wrap: wrap;
 }
+
 .cuerpo{
     display:grid;
     width: 200vh;
@@ -131,11 +141,11 @@ h3{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 50px;
+    gap: 30px;
     list-style: none;
     /* text-align: center; */
     height: 60px;
-    width: 200vh;
+    width: 180vh;
     background-color:rgba(205, 240, 234, 1);
 
 }
@@ -143,15 +153,26 @@ h3{
 
         flex-wrap: wrap;
         height: 70px;
-        width: 200vh;
+        width: 180vh;
         justify-content: row;
     }
-
+.menute{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 30px; */
+    list-style: none;
+    /* text-align: center; */
+    height: 60px;
+    width: 170vh;
+    
+}
 
 .contacto{
         background-color:greenyellow;
         text-align: center;
-        width: 200vh;
+        width: 180vh;
         height: 50px;
         padding: 10px 10px 10px 10px;
         border-bottom: 20px;
@@ -194,10 +215,267 @@ h3{
     text-decoration: none;
     
 }
+
 @media(max-width: 1440px){
+    .inicio{
+
+        width: 1440px;
+        height: 40vh;
+    }
+    .pepito{
+        width:1440px;
+        font-size: 30px;
+        text-align: center;
+        padding: 30px 0px 20px 150px;
+        gap: 250px;
+    }
+    .membrete{
+        width: 1440px;;
+        font-size: 10px;
+        text-align: center;
+        padding: 10px 0px 20px 150px;
+        gap: 25px;
+    }
+   
+    .menute{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        padding-top: 400px;
+        padding-left: 200px;
+        height: 60px;
+        width: 1440px;
+    }
+    .navbar{
+
+        width: 1440px;
+        height: 5vh;
+        padding-left: 20rem;
+        padding-top: 0.5rem;
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    .pres col{
+        width: 1440px;
+        height: 40vh;
+    }
+    .prom{
+        width: 180px;
+        height: 80vh;
+    }
+    .sectionFooter{
+        display:inline-block;
+        height: 65vh;
+        width: 90rem;
+        padding-top: 7rem;
+        
+    }
+    .tipo{
+        width: 90rem;
+        height: 80vh;
+    }
+    .cuerpo{
+        width: 90rem;
+    }
+    .contacto{
+        font-size: 1rem;
+        text-align: center;
+        /* padding-left: 1rem; */
+        width: 90rem;
+        height: 20vh;
+    }
+    .img{
+        grid-area: img;
+        width: 100px;
+        height: 50vh;
+        grid-area: img;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 1px 10px 10px 0px;   
+    }
+    .imagen{
+        width: 50vh;
+        height: 50vh;
+        grid-template-columns: 5vh 5vh 5vh;
+        grid-template-rows: 10vh 10vh 10vh;
+        ;
+    } 
+    .imgte{
+        grid-area: img;
+        width: 50px;
+        height: 50vh;
+        grid-area: img;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        padding: 1px 10px 10px 0px;   
+    }
+
+    .contactote{
+        font-size: 30px;
+        text-align: center;
+        width: 90rem;
+        height: 5vh;
+        background-color:greenyellow;
+       
+    }
+    .sectionFooterte{
+        display:inline-block;
+        height: 40vh;
+        width: 90rem;
+        padding-top: 7rem;
+        
+    }
 
 }
 @media(max-width: 1024px){
+
+    .inicio{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 1rem 2rem 1rem 10rem;
+        display: column;
+        width: 1024px;
+        height: 40vh;
+        
+    }
+    .membrete{
+            width: 1024px;;
+            font-size: 10px;
+            gap: 30px;
+           
+    }
+    .pepito{
+        width: 1024px;
+        gap:30px;
+       
+    }
+    .cuerpo{
+        width: 1024px;
+       
+
+    }
+    .pres{
+        width: 1024px;
+    }
+    .prom{
+        width: 180px;
+        height: 5vh;
+        
+    }
+  
+    .imagen{
+        width: 30vh;
+        height: 20vh;
+        grid-template-columns: 5vh 5vh 5vh;
+        grid-template-rows: 10vh 10vh 10vh;
+        
+    }
+    .imgte{
+        /* grid-area: img; */
+        width: 450px;
+        height: 50vh;
+        /* grid-area: img; */
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        /* padding: 1px 10px 10px 0px;    */
+        
+    }
+    .navbar{
+
+        width: auto;
+        height: 5vh;
+        padding-left: 6rem;
+        padding-top: 0.5rem;
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    .acerca{
+        height: 500px;
+        width: 1024px;
+    }
+    .acercab{
+        width: 1024px;
+        height: 500px;
+    }
+
+    .sectionFooter{
+        display:inline-block;
+        height: 35vh;
+        width: 1024px;
+        padding-top: 7rem;
+        gap:30px;
+        
+    }
+    .tipo{
+        width: 1024px;
+        height: 60vh;
+    }
+    .prom{
+        width: auto;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .prom p{
+        width: auto;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .par{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .row{
+        width: auto;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+       
+    }
+    .contacto{
+        font-size: 1.75rem;
+        text-align: center;
+        width: 1024px; 
+        height: 10vh;
+    }
+    .img{
+        grid-area: img;
+        width: 50px;
+        height: 50vh;
+        grid-area: img;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 1px 10px 10px 0px; 
+         
+    }
+    .contactote{
+        font-size: 1.75rem;
+        text-align: center;
+        width: 1024px; 
+        height: 10vh;
+    }
+    .menute{
+        padding-left: 20px;
+        width: 1024px;  
+    }
 
 }
 @media(max-width: 768px){
@@ -211,11 +489,215 @@ h3{
     .sectionFooter{
         flex-wrap: wrap;
         justify-content: left;
+        width: 768px;
     }
+   .contacto{
+    width: 768px;
+   }
+   .pepito{
+    width:768px;
+   }
+   .navbar{
+    width:768px;
+    justify-content: center;
+   }
+   .tipo{
+    width: 768px;
+}
+.div{
+    gap: 30px;
+    background-color:rgb(213, 200, 226);
+}
+.cuerpo row{
+    width:768px;
+    /* background-color:rgb(230, 243, 243); */
+   }
+.pres{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.menute{
+    width: 768px;
+    background-color:rgb(230, 243, 243); 
 }
 
-@media(max-width: 425px){
+.tipote{
+    text-align: right;
+}
 
+.contactote{
+    width: 768px;   
+}
+.imgte{
+    width: 620px;
+    height: 300px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color:rgb(230, 243, 243);
+}
+.acerca{
+    height: 800px;
+    width: 768px;
+}
+.acercab{
+    width: 768px;
+    height: 800px;
+}
+.sectionFooterte{
+    height: 550px;
+    width: 768px; 
+    padding-top: 120px;
+    background-color:rgb(230, 243, 243);
+}
+
+.div{
+    background-color:rgb(230, 243, 243);
+}
+.row{
+    width: 580px;
+    /* justify-content: space-between; */
+    font-size: 20px;
+    background-color:rgb(230, 243, 243);
+}
+
+.col{
+    /* text-align: left; */
+    font-size: 20px;
+    /* flex-direction: column; */
+    flex-direction: wrap;
+
+}
+}
+@media(max-width: 425px){
+    .inicio{
+        font-size: 2em;
+        text-align: right;
+        width: 425px;
+        height: 40vh; 
+        
+    }
+    .pepito{
+        width: 425px;
+        gap: 0.5px; 
+        padding-left: 10px;
+    }
+    .navbar{
+        width: 425px;
+        height: 50px;
+        padding-left: 1px;
+        padding-top: 0.5rem;
+        font-size: 20px;
+    }
+    .cuerpo{
+        width: 425px;
+        grid-template-columns: 150px 150px 150px;
+        grid-template-rows: 500px 500px 500px;
+        
+    }
+    .menute{
+        
+        flex-direction: wrap;
+        height: 30px;
+        width: 400px;
+        padding-top: 25rem;
+        gap:1px;
+    }
+    .contacto{
+            font-size: 20px;
+            text-align: center;
+            width: 425px; 
+            height: 10vh;
+    }
+    .contactote{
+        font-size: 20px;
+        text-align: center;
+        width: 425px; 
+        height: 10vh;
+    }
+  
+ 
+.col{
+    width: 300px;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.pres{
+    width: 300px;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+    .acercab{
+        width: 425px;
+        height: 500px;
+    }
+
+    .sectionFooter{
+        height: 35vh;
+        width: 425px;
+        padding-top: 7rem;
+        padding-left: 1px;
+    }
+    /* .sectionFooter{
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 425px;
+    } */
+
+    /* .tipo{
+        width: 425px;
+        height: 30px;
+    } */
+    .prom{
+        /* width: auto; */
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .col{
+        /* width: auto; */
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .ofer{
+        /* width: auto; */
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .prom p{
+        width: auto;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .par{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .row{
+        width: auto;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;   
+    }
 }
 
 @media(max-width: 375px){
@@ -224,7 +706,7 @@ h3{
         text-align: justify;
         padding: 1rem 2rem 1rem 10rem;
         display: column;
-        width: 50rem;
+        width: 375px;
         height: 40vh;
     }
 
@@ -234,37 +716,38 @@ h3{
         padding-left: 8rem;
         padding-top: 2rem;
         height: 40vh;
-        width: 50rem;
+        width: 375px;
     }
     .navbar{
 
-        width: 50rem;
+        width: 375px;
         height: 5vh;
-        padding-left: 6rem;
+        padding-left: 1rem;
         padding-top: 0.5rem;
         text-align: center;
         font-size: 20px;
     }
     .sectionFooter{
-        display:inline-block;
+        display: flex;
+        flex-direction: column;
         height: 65vh;
-        width: 50rem;
+        width: 375px;
         padding-top: 7rem;
+        padding-left: 1rem;
+        text-align: center;
         
     }
     .tipo{
-        width: 50rem;
+        width: 375px;
         height: 60vh;
     }
 
     .contacto{
-        font-size: 1.75rem;
-        text-align: center;
-        /* padding-left: 1rem; */
-        width: 50rem;
+        font-size: 20px;
+        width: 375px;
         height: 20vh;
     }
-    .img{
+    /* .img{
         grid-area: img;
         width: 50px;
         height: 50vh;
@@ -273,15 +756,16 @@ h3{
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
-        padding: 1px 10px 10px 0px;   
-    }
-    .imagen{
+        padding: 1px 10px 10px 0px; 
+        background-color: aqua;  
+    } */
+    /* .imagen{
         width: 25vh;
         height: 35vh;
         grid-template-columns: 5vh 5vh 5vh;
         grid-template-rows: 10vh 10vh 10vh;
-        ;
-    }
+        background-color: aqua;
+    } */
 } 
 
 @media(max-width: 320px){
@@ -291,47 +775,56 @@ h3{
         text-align: justify;
         padding: 0.5rem 2rem 1rem 0rem;
         display: block;
-        width: 50rem;
+        width: 320px;
         height: 50vh;
         display: block;
     }
 
     .menu{
-        justify-content: space-between;
+        
         height: 35vh;
-        width: 50rem;
-        display: inline-block;
+        width: 320px;
+    
     }
     .navbar{
-        width: 50rem;
+        width: 320px;
         height: 5vh;
-        padding-left: 5rem;
+        padding-left: 1rem;
         padding-top: 0.5rem;
         text-align: center;
-        font-size: 12px;
+        font-size: 20px;
+    }
+    .pepito{
+        width: 320px;
     }
     .sectionFooter{
         display:inline block;
         height: 10vh;
-        width: 50rem;    
+        width: 320px;    
     }
     .tipo{
-        width: 50rem;
+        width: 320px;
         height: 100vh;
     }
 .cuerpo{
     height: 120vh;
 }
 
-    .contacto{
-        font-size:0.8rem;
+.contacto{
+        font-size:1rem;
         text-align: justify;
-        width: 50rem;
+        width: 320px;
         height: 10vh;
-    }
+}
+.contactote{
+    font-size:1.5rem;
+    text-align: justify;
+    width: 320px;
+    height: 10vh;
+}
     .img{
         grid-area: img;
-        width: 20rem;
+        width: 320px;
         height: 50vh;
         grid-area: img;
         grid-column-start: 1;
@@ -341,7 +834,7 @@ h3{
         padding: 1px 10px 10px 0px;   
     }
     .imagen{
-        width: 50rem;
+        width: 320px;
         height: 50vh;
         grid-template-columns: 5vh 5vh 5vh;
         grid-template-rows: 10vh 10vh 10vh;
